@@ -1,3 +1,4 @@
+attribute vec3 attr_Normal;
 attribute vec3 attr_Position;
 attribute vec4 attr_TexCoord0;
 
@@ -6,17 +7,23 @@ uniform mat4   u_ModelViewProjectionMatrix;
 uniform vec4	u_ViewInfo; // zfar / znear, zfar
 uniform vec2	u_Dimensions;
 uniform vec4	u_Local0; // depthScale, 0, 0, 0
-
+uniform float u_Time;
 varying vec2   var_TexCoords;
 varying vec4	var_ViewInfo; // zfar / znear, zfar
 varying vec2   var_Dimensions;
 varying vec4   var_Local0; // depthScale, 0, 0, 0
+varying float var_Time;
 
 void main()
 {
-	gl_Position = u_ModelViewProjectionMatrix * vec4(attr_Position, 1.0);
-	var_TexCoords = attr_TexCoord0.st;
-	var_ViewInfo = u_ViewInfo;
+	vec3 position  = attr_Position;
+	vec3 normal = attr_Normal * 2.0 - vec3(1.0);
+
+	vec2 tex = attr_TexCoord0.st;
+	gl_Position = u_ModelViewProjectionMatrix * vec4(position, 1.0);
+
+	float time = u_Time + 0.5;
+	var_TexCoords = tex;
 	var_Dimensions = u_Dimensions.st;
-	var_Local0 = u_Local0.rgba;
+	var_Time = u_Time;
 }
