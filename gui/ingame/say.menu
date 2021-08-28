@@ -46,7 +46,6 @@
       style WINDOW_STYLE_EMPTY
       text "Say:"
       cvar "ui_sayBuffer"
-      maxchars 128
       rect 0 0 W H
       textalign ALIGN_LEFT
       textvalign VALIGN_CENTER
@@ -182,7 +181,6 @@
       style WINDOW_STYLE_EMPTY
       text "Say to team:"
       cvar "ui_sayBuffer"
-      maxchars 128
       rect 0 0 W H
       textalign ALIGN_LEFT
       textvalign VALIGN_CENTER
@@ -318,7 +316,6 @@
       style WINDOW_STYLE_EMPTY
       text "Say to crosshair:"
       cvar "ui_sayBuffer"
-      maxchars 128
       rect 0 0 W H
       textalign ALIGN_LEFT
       textvalign VALIGN_CENTER
@@ -454,7 +451,6 @@
       style WINDOW_STYLE_EMPTY
       text "Say to area:"
       cvar "ui_sayBuffer"
-      maxchars 128
       rect 0 0 W H
       textalign ALIGN_LEFT
       textvalign VALIGN_CENTER
@@ -590,7 +586,6 @@
       style WINDOW_STYLE_EMPTY
       text "Say to admins:"
       cvar "ui_sayBuffer"
-      maxchars 128
       rect 0 0 W H
       textalign ALIGN_LEFT
       textvalign VALIGN_CENTER
@@ -726,7 +721,6 @@
       style WINDOW_STYLE_EMPTY
       text "Say to Clan:"
       cvar "ui_sayBuffer"
-      maxchars 128
       rect 0 0 W H
       textalign ALIGN_LEFT
       textvalign VALIGN_CENTER
@@ -862,7 +856,6 @@
       style WINDOW_STYLE_EMPTY
       text "Command:"
       cvar "ui_sayBuffer"
-      maxchars 128
       rect 0 0 W H
       textalign ALIGN_LEFT
       textvalign VALIGN_CENTER
