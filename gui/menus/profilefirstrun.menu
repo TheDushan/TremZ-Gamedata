@@ -7,10 +7,11 @@
   menuDef
   {
 	name profilefirstrunlogin
-	fullScreen MENU_FALSE
+	fullScreen MENU_TRUE
 	rect (320-(W/2)) (240-(H/2)) W H												// Size and position of the menu
 	visible MENU_TRUE       												// Visible on open
 	focusColor COMMON_GOLD_R COMMON_GOLD_G COMMON_GOLD_B COMMON_FULLALPHA   // Menu focus color for text and items
+	background "gui/assets/background"
 	aspectBias ASPECT_NONE
 
   itemDef
@@ -86,15 +87,3 @@
       }
     }
   }
-
-  menuDef
-	{
-		name profilefirstrunloginbackground
-		fullScreen MENU_TRUE
-		rect 0 0 640 480      													// Size and position of the menu
-		visible MENU_TRUE       												// Visible on open
-		focusColor COMMON_GOLD_R COMMON_GOLD_G COMMON_GOLD_B COMMON_FULLALPHA   // Menu focus color for text and items
-		background "gui/assets/background"
-		aspectBias ASPECT_NONE
-	}
-}
