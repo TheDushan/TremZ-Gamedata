@@ -20,7 +20,7 @@ vec2 sampleOffset = vec2(1.0/u_Dimensions);
 #define fMatsoDOFBokehLight		4.0//0.512 	// [0.0 to 2.0] Bokeh brightening factor.
 #define fMatsoDOFBokehAngle		10		// [0 to 360] Rotation angle of bokeh shape.
 
-#define iMatsoDOFBokehQuality	10		// [1 to 10] Blur quality as control value over tap count.
+#define iMatsoDOFBokehQuality	2		// [1 to 10] Blur quality as control value over tap count.
 #define DOF_BLURRADIUS 			10.0
 
 const vec2 tdirs[4] = vec2[4]( vec2(-0.306, 0.739), vec2(0.306, 0.739), vec2(-0.739, 0.306), vec2(-0.739, -0.306) );
