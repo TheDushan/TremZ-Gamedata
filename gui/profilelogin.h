@@ -1,11 +1,11 @@
 #define X             0
-#define Y             20
-#define W             250
-#define H             ((10*(ELEM_H+ELEM_GAP))+120)
+#define Y             100
+#define W             650
+#define H             490
 #define TOFF_X        (0-(W/2))
 #define ELEM_H        16
 #define ELEM_GAP      4
-#define BUTT_W        35
+#define BUTT_W        75
 #define BUTT_H        35
 #define BORDER        10
 #define RESCOMBO_OFF  8
