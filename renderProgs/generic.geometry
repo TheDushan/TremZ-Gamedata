@@ -1,0 +1,22 @@
+layout(triangles) in;
+layout(triangle_strip, max_vertices = 3) out;
+
+uniform mat4 u_ModelViewProjectionMatrix;
+
+in vec4 var_Color[];
+in vec2 var_DiffuseTex[];
+
+out vec4 var_Color;
+out vec2 var_DiffuseTex;
+
+void main()
+{
+    for (int i = 0; i < gl_in.length(); ++i)
+    {
+        gl_Position = u_ModelViewProjectionMatrix * gl_in[i].gl_Position;
+        var_Color = var_Color[i];
+        var_DiffuseTex = var_DiffuseTex[i];
+        EmitVertex();
+    }
+    EndPrimitive();
+}
